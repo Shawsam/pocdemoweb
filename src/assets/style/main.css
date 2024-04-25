@@ -1,0 +1,366 @@
+@import './base.css';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  min-height: 100vh;
+  font-weight: normal;
+  background: #EDEDED;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.4s;
+}
+
+@font-face {
+  font-family: YouSheBiaoTiHei;
+  src: url(@/assets/font/YouSheBiaoTiHei.woff2);
+  font-display: swap;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex_item {
+  flex: 1;
+}
+
+.flex-left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.multiple-ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.line-5 {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+.mt15 {
+  margin-top: 15px;
+}
+
+.mt20 {
+  margin-top: 20px;
+}
+
+.mt30 {
+  margin-top: 30px;
+}
+
+.mr10 {
+  margin-right: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.ml10 {
+  margin-left: 10px;
+}
+
+.ml20 {
+  margin-left: 20px;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.height0 {
+  height: 0;
+}
+
+.opacity0 {
+  opacity: 0;
+}
+
+.box-shadow {
+  background: #fff;
+  box-shadow: 0 5px 15px 0 hsla(0, 0%, 50%, 0.1);
+  border-radius: 12px;
+  padding: 15px 20px 30px;
+}
+
+/* 显示滚动条 */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: #525e6a;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #728292;
+}
+
+@media (min-width: 1024px) {
+  /*移动端适配*/
+}
+
+.el-date-editor .el-range__icon {
+  color: #704FFF !important;
+  font-size: 16px !important;
+}
+
+.empty {
+  min-height: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.empty img {
+  width: 120px;
+}
+
+.empty p {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #737373;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td.el-table__cell {
+  background-color: #f8f8f8 !important;
+}
+
+.el-table th.el-table__cell.is-leaf {
+  background-color: #EFF1F5 !important;
+}
+
+.el-table td.el-table__cell,
+.el-table th.el-table__cell.is-leaf {
+  border-bottom: none !important;
+}
+
+.el-loading-parent--relative {
+  /* background-color: #236adb !important; */
+}
+
+.el-table--striped .el-table__body tr td {
+  background-color: #F8FAFF !important;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: #F3F5FA !important;
+}
+
+.el-table__empty-block {
+  background-color: #F8FAFF;
+}
+
+.el-table .cell {
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.el-table th.el-table__cell.is-leaf {
+  height: 55px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.el-table .el-table__cell.is-leaf .cell {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.el-table__inner-wrapper::before {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.el-popper.is-light {
+  z-index: 20 !important;
+}
+
+:where(.css-dev-only-do-not-override-eq3tly).ant-select-dropdown {
+  z-index: 30 !important;
+}
+
+.el-autocomplete-suggestion {
+  width: 430px !important;
+}
+
+
+
+.selectType {
+  width: 240px;
+
+  .selectTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+
+    .el-checkbox__label {
+      font-size: 12px;
+    }
+  }
+
+  .el-checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    border-top: 1px solid #F3F5FA;
+    border-bottom: 1px solid #F3F5FA;
+
+    .el-checkbox {
+      margin-right: 3%;
+      min-width: 30%;
+
+      .el-checkbox__label {
+        font-size: 12px;
+
+        .el-select-dropdown__item {
+          display: none;
+        }
+
+        .selected {
+          color: #606266;
+          font-weight: normal;
+        }
+
+        .hover {
+          background-color: transparent !important;
+        }
+      }
+    }
+  }
+}
+
+.confirmButtonClass {
+  color: #fff;
+  background-color: #704FFF !important;
+  border-color: #704FFF !important;
+
+}
+
+.cancelButtonClass:hover {
+  color: #FFF !important;
+  background-color: #d4cbff !important;
+  border-color: #d4cbff !important;
+}
+
+.el-notification {
+  width: 360px !important;
+}
+
+.el-notification .el-notification__closeBtn {
+  /* right: -22px !important; */
+  position: relative !important;
+  right: -10px !important;
+  top: 0 !important;
+}
+
+.el-notification.right {
+  display: flex;
+  align-items: center;
+}
+
+.el-notification__content {
+  display: flex;
+  align-items: center;
+}
+
+.el-notification__group {
+  display: flex;
+  align-items: center;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background: #F6F4FF !important;
+}
+
+.el-table th.el-table__cell.is-leaf {
+  background: #E7E2FF !important;
+}
+
+.el-table--striped .el-table__body tr td {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid #ebeef5 !important;
+}
+
+.el-table .el-table__cell.is-leaf .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.el-table .caret-wrapper {
+  margin-top: 3px;
+}
+
+.el-message {
+  margin-top: 60px;
+}

@@ -1,0 +1,164 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+:root {
+  --brand-6: #4975e9;
+  --brand-5: #6d91ed;
+  --brand-4: #92acf2;
+  --brand-3: #b6c8f6;
+  --brand-2: #dbe3fb;
+  --brand-1: #edf1fd;
+  --brand2-4: #3352a3;
+  --brand2-3: #809ef0;
+  --brand2-2: #b6c8f6;
+  --brand2-1: #edf1fd;
+  --text-5: #1a1d23;
+  --text-4: #4b4c4d;
+  --text-3: #8c8d93;
+  --text-2: #c9cdd4;
+  --text-1: #fff;
+  --line-4: #86909c;
+  --line-3: #c9cdd4;
+  --line-2: #e5e6eb;
+  --line-1: #f2f3f5;
+  --fill-7: rgba(0, 0, 0, 0.5);
+  --fill-6: #ddd;
+  --fill-5: #fafafa;
+  --fill-4: #f0f0f0;
+  --fill-3: #f7f7f8;
+  --fill-2: #f7f8fa;
+  --fill-1: #fff;
+  --kgj-fill-pink-10: #fdf2f3;
+  --kgj-fill-brand-100: #4975e9;
+  --kgj-fill-brand-10: #edf1fd;
+  --warning-6: #ec803d;
+  --warning-5: #f09964;
+  --warning-4: #f4b38b;
+  --warning-3: #f7ccb1;
+  --warning-2: #fbe6d8;
+  --warning-1: #fdf2ec;
+  --success-6: #66c6af;
+  --success-5: #85d1bf;
+  --success-4: #a3ddcf;
+  --success-3: #c2e8df;
+  --success-2: #e0f4ef;
+  --success-1: #f0f9f7;
+  --error-6: #e84a58;
+  --error-5: #ed6e79;
+  --error-4: #f1929b;
+  --error-3: #f6b7bc;
+  --error-2: #fadbde;
+  --error-1: #fdedee;
+  --pop-index: 2010;
+  --font-bold: 500;
+  --font-normal: 400;
+  --pink-7: #ee48a7;
+  --pink-6: #ed7c8c;
+  --pink-5: #f196a3;
+  --pink-4: #f4b0ba;
+  --pink-3: #f8cbd1;
+  --pink-2: #fbe5e8;
+  --pink-1: #fdf2f3;
+  --kgj-fill-4: #f4bd49;
+  --yellow-6: #f4bd49;
+  --yellow-1: #fef8ed;
+  --yellow-2: #fea649;
+  --yellow-3: #fff8f5;
+  --yellow-4: #fff3ef;
+  --font-12: 12px;
+  --font-13: 13px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-20: 20px;
+  --font-24: 24px;
+  --font-36: 36px;
+  --font-48: 48px;
+  --font-56: 56px;
+  --line-height-12: 20px;
+  --line-height-13: 22px;
+  --line-height-14: 22px;
+  --line-height-16: 24px;
+  --line-height-20: 28px;
+  --line-height-24: 32px;
+  --line-height-36: 44px;
+  --line-height-48: 56px;
+  --line-height-56: 64px;
+  --theme-color: #6D76F9;
+  --theme-style: #1631B9;
+  --product-3001: #C4B6FF;
+  --product-3002: #FFB08E;
+  --product-3003: #59EDED;
+  --product-3004: #FFD25C;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
